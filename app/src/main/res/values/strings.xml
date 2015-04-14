@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DemoAndroidThings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dynamic_strings">DynamicStringsActivity</string>
+
+    <!-- Strings para ejemplo 1-->
+    <plurals name="example1_1">
+        <item quantity="one">Tengo %d ejemplo</item>
+        <item quantity="other">Tengo %d ejemplos</item>
+    </plurals>
+
+    <string name="example2_1">{0,choice,0#No tengo ejemplos|1#Tengo un ejemplo|1&lt;Tengo {0} ejemplos}</string>
+</resources>
