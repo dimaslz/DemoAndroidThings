@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.dimaslz.demoandroidthings.examples.Flavors.FlavorsActivity;
 import com.dimaslz.demoandroidthings.examples.DynamicStrings.DynamicStringsActivity;
 
 
@@ -31,6 +32,15 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick (View v) {
                 Intent intent = new Intent(activity, DynamicStringsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button example2 = (Button)findViewById(R.id.btn_example2);
+        example2.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick (View v) {
+                Intent intent = new Intent(activity, FlavorsActivity.class);
                 startActivity(intent);
             }
         });

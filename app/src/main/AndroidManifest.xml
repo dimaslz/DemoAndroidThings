@@ -21,6 +21,11 @@
             android:label="@string/title_activity_dynamic_strings" >
         </activity>
 
+        <activity
+            android:name=".examples.Flavors.FlavorsActivity"
+            android:label="@string/title_activity_flavors" >
+        </activity>
+
     </application>
 
 </manifest>

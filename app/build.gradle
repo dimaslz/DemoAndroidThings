@@ -11,10 +11,30 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    productFlavors {
+        free {
+            applicationId = "com.dimaslz.demoandroidthings"
+            minSdkVersion 14
+            targetSdkVersion 22
+            versionCode 1
+            versionName 'v0.0.1 free'
+        }
+        premium {
+            applicationId = "com.dimaslz.demoandroidthings.pro"
+            minSdkVersion 14
+            targetSdkVersion 22
+            versionCode 1
+            versionName 'v0.0.1 pro'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile( 'proguard-android.txt' ) , 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix ".debug"
         }
     }
 }
